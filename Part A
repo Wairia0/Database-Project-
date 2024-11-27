@@ -1,0 +1,15 @@
+CREATE TABLE Waterpoints (
+    waterpointId INT PRIMARY KEY,
+    waterpointName VARCHAR(255) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    capacity INT NOT NULL,
+    type VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Waterpoints (waterpointId,waterpointName,location,capacity,type)
+VALUES(4566576, 'Everest', 'Westlands', 453, 'borehole'),
+      (55378987, 'RTF', 'Kasarani', 789, 'tap'),
+      (6256237, 'JHG', 'Karen', 65, 'dam'),
+      (977467, 'DSE', 'Embakasi', 576, 'borehole'),
+      (6325756, 'DFT', 'Langata', 567, 'dam');
+SELECT * FROM Waterpoints;
